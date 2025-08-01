@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="outer">
+        <h1>Registation Form</h1>
+        <!-- Form Started here -->
+        <div class="inner">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <p><input class="in" type="text" placeholder="Type your First Name"/></p>
+                <p><input class="in" type="text" placeholder="Type your Last Name"/></p>
+                <p><input class="in" type="email" placeholder="Type your Email"/></p>
+                <p><input class="in" type="text" placeholder="Type your Username"/></p>            
+                <p><input class="in" type="password" placeholder="Type your Password"/></p>
+                <!-- To do: normal login button with animating border -->
+                <p><input class="btn" type="submit" value="Submit"/></p>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
